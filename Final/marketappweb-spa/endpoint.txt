@@ -1,0 +1,58 @@
+
+Customers
+===========
+POST: http://localhost:8093/customers
+
+{
+        "firstName": "Henry Antonio",
+        "lastName": "Mendoza Puerta",
+        "dni": "40738934"
+}
+
+GET: http://localhost:8093/customers
+
+
+Products
+=========
+POST: http://localhost:8093/products
+{
+        "name": "Arroz",
+        "price": 12.34
+}
+
+{
+        "name": "Carne",
+        "price": 10.34
+}
+
+
+Invoices
+=========
+POST: http://localhost:8093/invoices
+
+{
+	
+  "description": "Ninguno",
+  "observation": "Ninguno",
+  "createAt": "2019-10-19T12:46:04.040Z",
+  "customer": {
+    "id": 1
+  },
+  "items": [
+     {
+      "quantity": 3,
+      "product": {
+        "id": 1
+       }
+      },
+      {
+      "quantity": 3,
+      "product": {
+        "id": 1
+      }
+    }
+  ]
+}
+
+
+
